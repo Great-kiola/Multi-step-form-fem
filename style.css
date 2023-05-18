@@ -15,20 +15,6 @@ h1 {
 }
 
 /* Miscellaneous */
-
-@font-face {
-  font-family: "ubuntu-Bold", sans-serif;
-  src: url(./assets/fonts/Ubuntu-Bold.ttf);
-}
-@font-face {
-  font-family: ubuntu-Medium, sans-serif;
-  src: url(./assets/fonts/Ubuntu-Medium.ttf);
-}
-@font-face {
-  font-family: "ubuntu-Regular", sans-serif;
-  src: url(./assets/fonts/Ubuntu-Regular.ttf);
-}
-
 :root {
     --Marineblue: hsl(213, 96%, 18%);
     --Purplishblue: hsl(243, 100%, 62%);
@@ -52,3 +38,16 @@ h1 {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@font-face {
+    font-family: "ubuntu-Bold", sans-serif;
+    src: url(./assets/fonts/Ubuntu-Bold.ttf);
+  }
+  @font-face {
+    font-family: "ubuntu-Medium", sans-serif;
+    src: url(./assets/fonts/Ubuntu-Medium.ttf);
+  }
+  @font-face {
+    font-family: "ubuntu-Regular", sans-serif;
+    src: url(./assets/fonts/Ubuntu-Regular.ttf);
+  }
