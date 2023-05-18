@@ -42,7 +42,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- GitHub - [Gh](https://github.com/Great-kiola)
 - Frontend Mentor - [@great-kiola](https://www.frontendmentor.io/profile/great-kiola)
 
 ## Acknowledgments
