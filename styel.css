@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: ubuntu-Bold 'sans-serif';
+    src: url(./assets/fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: ubuntu-Medium 'sans-serif';
+    src: url(./assets/fonts/Ubuntu-Medium.ttf);
+}
+@font-face {
+    font-family: ubuntu-Regular 'sans-serif';
+    src: url(./assets/fonts/Ubuntu-Regular.ttf);
+}
