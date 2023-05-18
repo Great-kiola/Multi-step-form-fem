@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'ubuntu-Regular', sans-serif;
 }
 
 body{
@@ -8,15 +9,20 @@ body{
     min-height: 100vh;
 }
 
+h1{
+    font-size: 2rem;
+    font-family: "ubuntu-Bold" , sans-serif;
+}
+
 @font-face {
-    font-family: ubuntu-Bold 'sans-serif';
+    font-family: "ubuntu-Bold" , sans-serif;
     src: url(./assets/fonts/Ubuntu-Bold.ttf);
 }
 @font-face {
-    font-family: ubuntu-Medium 'sans-serif';
+    font-family: ubuntu-Medium, sans-serif ;
     src: url(./assets/fonts/Ubuntu-Medium.ttf);
 }
 @font-face {
-    font-family: ubuntu-Regular 'sans-serif';
+    font-family: 'ubuntu-Regular', sans-serif;
     src: url(./assets/fonts/Ubuntu-Regular.ttf);
 }
