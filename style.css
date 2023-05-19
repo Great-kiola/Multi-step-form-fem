@@ -56,9 +56,7 @@ h1 {
 
 .secondSection{
   padding: 20px;
-  height: 500px;
-  border: 2px solid red;
-
+  height: 100%;
 }
 
 .Step1{
@@ -67,6 +65,53 @@ h1 {
   justify-content: space-between;
   flex-direction: column;
 }
+
+label{
+  display: flex;
+  font-size: .7rem;
+  color: var(--Marineblue);
+  margin-bottom: 5px;
+  font-family: 'ubuntu-Medium', sans-serif;
+}
+
+::placeholder{
+  font-size: .7rem;
+}
+
+.Step1 .formDiv input{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--Coolgray);
+  width: 90%;
+  margin-bottom: 15px;
+  color: var(--Marineblue);
+  font-family: 'ubuntu-Medium', sans-serif;
+}
+
+.Step1 .formDiv input:focus{
+  outline: 1px solid var(--Purplishblue);
+}
+
+.nextBtn{
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--Marineblue);
+  color: var(--White);
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+ul{
+  list-style-type: none;
+}
+
 
 
 
