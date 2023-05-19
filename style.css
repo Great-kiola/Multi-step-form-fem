@@ -40,7 +40,7 @@ h1 {
   display: flex;
   align-items: center;
   border-radius: 20px;
-  height: 450px;
+  height: 500px;
   width: 700px;
 }
 
@@ -54,6 +54,10 @@ h1 {
   margin: 5px;
 }
 
+.secondSection{
+  border: 1px solid blue;
+  max-height: 450px;
+}
 
 .Step1{
   min-height: 500px;
@@ -161,6 +165,9 @@ ul{
   margin: 10px auto;
 }
 
+.btnDiv{
+  border: 1px solid red;
+}
 
 
 /* Miscellaneous */
