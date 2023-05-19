@@ -48,14 +48,14 @@ h1 {
   background-image: url(./assets/images/bg-sidebar-desktop.svg);
   background-repeat: no-repeat;
   width: 250px;
-  height: 400px;
+  height: 450px;
   background-size: contain;
   padding: 20px;
   margin: 5px;
 }
 
 .secondSection{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   max-height: 450px;
 }
 
@@ -165,9 +165,9 @@ ul{
   margin: 10px auto;
 }
 
-.btnDiv{
+/* .btnDiv{
   border: 1px solid red;
-}
+} */
 
 
 /* Miscellaneous */
