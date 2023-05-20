@@ -184,10 +184,42 @@ ul{
 }
 
 .toggle{
+  position: relative;
   border: 1px solid var(--Marineblue);
   background-color: var(--Marineblue);
-  width: 50px;
+  width: 45px;
   height: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.toggle::before{
+  content: '';
+  background-color: var(--White);
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: 2px;
+  left: 3px;
+  transition: 0.5s ease;
+}
+
+.toggle.after{
+  background-color: transparent;
+  border: 1.5px solid var(--Marineblue);
+}
+
+.toggle.after::before{
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--Marineblue);
+  top: 2px;
+  left: 27px;
+  
 }
 
 
