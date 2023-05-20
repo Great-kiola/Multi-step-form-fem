@@ -49,21 +49,25 @@ h1 {
   background-repeat: no-repeat;
   width: 250px;
   height: 450px;
-  background-size: contain;
   padding: 20px;
+  background-size: cover;
+  border-radius: 10px;
   margin: 5px;
 }
 
 .secondSection{
   /* border: 1px solid blue; */
   max-height: 450px;
+  width: 100%;
+  margin: 0px 30px;
 }
 
 .Step1{
+  display: none;
   min-height: 500px;
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
-  flex-direction: column;
+  flex-direction: column; */
 }
 
 label{
@@ -168,6 +172,23 @@ ul{
 /* .btnDiv{
   border: 1px solid red;
 } */
+
+.plans ul li{
+  color: var(--Marineblue);
+}
+
+.plans{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle{
+  border: 1px solid var(--Marineblue);
+  background-color: var(--Marineblue);
+  width: 50px;
+  height: 20px;
+}
 
 
 /* Miscellaneous */
