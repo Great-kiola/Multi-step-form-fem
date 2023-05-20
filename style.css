@@ -206,8 +206,8 @@ ul{
 }
 
 .toggle.after{
-  background-color: transparent;
-  outline: 1px solid var(--Marineblue);
+  background-color: var(--Pastelblue);
+  border: none;
 }
 
 .toggle.after::before{
@@ -243,6 +243,32 @@ ul{
 
 .monthlyPrice h2.yearly{
   color: var(--Coolgray);
+  font-weight: 400;
+}
+
+.planBox{
+  border: 1.5px solid var(--Coolgray);
+  width: 100px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.planBox:hover{
+  background-color: var(--Lightblue);
+  outline: 1px solid var(--Purplishblue);
+
+}
+
+.pageBtns{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px auto;
 }
 
 /* Miscellaneous */

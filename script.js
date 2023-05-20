@@ -2,6 +2,8 @@ let numbers = document.querySelectorAll('.number1');
 let nextBtn = document.querySelector('.nextBtn');
 let toggle = document.querySelector('.toggle');
 
+let yearly = document.querySelector('.yearly');
+let monthly = document.querySelector('.monthly');
 
 let step1 = document.querySelector('.Step1');
 
@@ -13,6 +15,13 @@ nextBtn.addEventListener('click', () => {
 toggle.addEventListener('click', (e) => {
     e.preventDefault();
     toggle.classList.toggle('after');
+    
+    if (yearly.style.fontWeight = '400'){
+        yearly.style.fontWeight = '700';
+        yearly.style.color = 'red';
+    } else {
+        yearly.style.fontWeight = '400';
+    }
 });
 
 
