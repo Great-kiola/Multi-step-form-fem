@@ -207,7 +207,7 @@ ul{
 
 .toggle.after{
   background-color: transparent;
-  border: 1.5px solid var(--Marineblue);
+  outline: 1px solid var(--Marineblue);
 }
 
 .toggle.after::before{
@@ -222,6 +222,28 @@ ul{
   
 }
 
+.monthlyPrice{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  background-color: var(--Magnolia);
+  padding: 8px;
+}
+
+.monthlyPrice h2{
+  font-size: .9rem;
+  padding: 10px;
+}
+
+.monthlyPrice h2.monthly{
+  color: var(--Marineblue);
+  font-weight: bolder;
+}
+
+.monthlyPrice h2.yearly{
+  color: var(--Coolgray);
+}
 
 /* Miscellaneous */
 :root {
