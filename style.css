@@ -271,6 +271,14 @@ ul{
   margin: 30px auto;
 }
 
+.prevBtn{
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  color: var(--Marineblue);
+  cursor: pointer;
+}
+
 /* Miscellaneous */
 :root {
     --Marineblue: hsl(213, 96%, 18%);
