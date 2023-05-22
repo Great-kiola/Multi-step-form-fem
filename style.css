@@ -65,9 +65,9 @@ h1 {
 .Step1{
   display: none;
   min-height: 500px;
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
-  flex-direction: column;
+  flex-direction: column; */
 }
 
 label{
@@ -278,6 +278,15 @@ ul{
   color: var(--Marineblue);
   cursor: pointer;
 }
+
+.step2{
+  /* display: none; */
+}
+
+.pageBtns{
+  margin: 50px auto;
+}
+
 
 /* Miscellaneous */
 :root {
