@@ -15,7 +15,7 @@ nextBtn.addEventListener('click', () => {
 });
 
 prevBtn.addEventListener('click', () => {
-    step1.style.display = 'block';
+    step1.style.display = 'flex';
     step2.style.display = 'none';
 });
 

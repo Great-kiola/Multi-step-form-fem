@@ -65,9 +65,9 @@ h1 {
 .Step1{
   display: none;
   min-height: 500px;
-  /* display: flex;
+  display: flex;
   justify-content: space-around;
-  flex-direction: column; */
+  flex-direction: column;
 }
 
 label{
@@ -96,12 +96,12 @@ label{
   outline: 1px solid var(--Purplishblue);
 }
 
-.Step1 .heading h1{
+.heading h1{
   font-size: 1.6rem;
   color: var(--Marineblue);
 }
 
-.Step1 .heading p{
+.heading p{
   font-size: .8rem;
   color: var(--Coolgray);
 }
