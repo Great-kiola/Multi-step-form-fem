@@ -348,8 +348,6 @@ ul{
   justify-content: space-between;
 }
 
-
-
 .chosenPlan ul li.chosenPlans{
   color: var(--Marineblue);
   font-size: .8rem;
@@ -365,6 +363,11 @@ ul{
   font-size: .8rem;
   font-weight: 700;
   color: var(--Marineblue);
+}
+
+hr{
+  margin: 10px 20px;
+  border: .5px solid var(--Lightgray);
 }
 
 
