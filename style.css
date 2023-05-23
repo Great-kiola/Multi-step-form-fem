@@ -293,9 +293,9 @@ ul{
   display: none;
 }
 
-/* .step3{
+.step3{
   display: none;
-} */
+}
 
 .addOnsCont{
   margin: 25px auto;
@@ -318,7 +318,7 @@ ul{
 }
 
 .addOns .addOnPrice{
-  font-size: .9rem;
+  font-size: .8rem;
   color: var(--Purplishblue);
 }
 
@@ -334,6 +334,40 @@ ul{
 .plansDiv{
   margin-left: 15px;
 }
+
+.subsBox{
+  background-color: var(--Alabaster);
+  width: 100%;
+  height: 150px;
+  margin: 20px auto;
+}
+
+.chosenPlan{
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.chosenPlan ul li.chosenPlans{
+  color: var(--Marineblue);
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.chosenPlan ul li a{
+  font-size: .8rem;
+  font-weight: 400;  
+}
+
+.chosenPlan h2{
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--Marineblue);
+}
+
+
 /* Miscellaneous */
 :root {
     --Marineblue: hsl(213, 96%, 18%);
