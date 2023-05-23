@@ -278,7 +278,7 @@ ul{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 30px auto;
+  margin: 50px auto;
 }
 
 .prevBtn{
@@ -293,13 +293,9 @@ ul{
   display: none;
 }
 
-.step3{
+/* .step3{
   display: none;
-}
-
-.pageBtns{
-  margin: 50px auto;
-}
+} */
 
 .addOnsCont{
   margin: 25px auto;
@@ -322,7 +318,7 @@ ul{
 }
 
 .addOns .addOnPrice{
-  font-size: .7rem;
+  font-size: .9rem;
   color: var(--Purplishblue);
 }
 
