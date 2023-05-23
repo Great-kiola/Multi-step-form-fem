@@ -62,11 +62,12 @@ h1 {
 }
 
 .Step1{
-  min-height: 500px;
+  /* display: none; */
+  min-height: 420px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: column;
-}
+} 
 
 label{
   display: flex;
@@ -95,8 +96,10 @@ label{
 }
 
 .heading h1{
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: var(--Marineblue);
+  font-weight: 700;
+  font-family: 'ubuntu-Bold';
 }
 
 .heading p{
@@ -166,10 +169,6 @@ ul{
 .menus{
   margin: 10px auto;
 }
-
-/* .btnDiv{
-  border: 1px solid red;
-} */
 
 .plans ul li{
   color: var(--Marineblue);
@@ -426,8 +425,8 @@ hr{
   width: 350px;
 }
 
-.thankYouDiv img {
-  width: 50px;
+img {
+  width: 40px;
   margin-bottom: 10px;
 }
 
