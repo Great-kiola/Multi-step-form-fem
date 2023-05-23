@@ -93,14 +93,23 @@
 
           <div class="formDiv">
             <form>
-              <label for="firstName">Name</label>
-              <input type="text" placeholder="e.g. Stephen King">
+              <div class="errorDiv">
+                <label for="Name">Name</label>
+                <div class="errorMsg errorMsg1"> cant be blank</div>
+              </div>
+              <input id="Name" type="text" placeholder="e.g. Stephen King">
+              
+              <div class="errorDiv">
+                <label for="email">Email Address</label>
+                <div class="errorMsg errorMsg2"> Invalid Email Address</div>
+              </div>
+              <input id="email" type="text" placeholder="e.g. stephenking@lorem.com">
 
-              <label for="firstName">Email Address</label>
-              <input type="text" placeholder="e.g. stephenking@lorem.com">
-
-              <label for="firstName">Phone Number</label>
-              <input type="number" placeholder="e.g. +1 234 567 890">
+              <div class="errorDiv">
+                <label for="phoneNumber">Phone Number</label>
+                <div class="errorMsg errorMsg3"> cant be blank</div>
+              </div>
+              <input id="phoneNumber" type="number" placeholder="e.g. +1 234 567 890">
             </form>
           </div>
 

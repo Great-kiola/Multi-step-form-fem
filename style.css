@@ -73,6 +73,19 @@ h1 {
   flex-direction: column;
 } 
 
+.errorMsg{
+  display: none;
+  color: var(--Strawberryred);
+  font-size: .8rem;
+}
+
+.errorDiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px auto;
+}
+
 label{
   display: flex;
   font-size: .7rem;
