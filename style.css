@@ -297,6 +297,26 @@ ul{
   margin: 50px auto;
 }
 
+.addOnsCont{
+  margin: 25px auto;
+}
+
+.addOns{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  outline: 1.2px solid var(--Coolgray);
+  padding: 10px 20px;
+  margin: 15px auto;
+  border-radius: 8px;
+}
+
+.addOns:hover{
+  background-color: var(--Magnolia);
+  outline: 1.5px solid var(--Purplishblue);
+}
+
 
 /* Miscellaneous */
 :root {
