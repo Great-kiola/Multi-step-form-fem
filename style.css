@@ -76,8 +76,12 @@ h1 {
 .errorMsg{
   display: none;
   color: var(--Strawberryred);
-  font-size: .8rem;
+  font-size: .7rem;
+  font-weight: 700;
+  margin-right: 25px;
 }
+
+
 
 .errorDiv{
   display: flex;
