@@ -337,13 +337,13 @@ ul{
 
 .subsBox{
   background-color: var(--Alabaster);
-  width: 100%;
-  height: 150px;
+  min-height: 190px;
   margin: 20px auto;
+  border-radius: 10px;
 }
 
 .chosenPlan{
-  padding: 15px;
+  padding: 25px;
   display: flex;
   justify-content: space-between;
 }
@@ -366,8 +366,42 @@ ul{
 }
 
 hr{
-  margin: 10px 20px;
+  margin: 5px 20px;
   border: .5px solid var(--Lightgray);
+}
+
+.services{
+  margin: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services h2{
+  font-size: .7rem;
+}
+
+.services .serviceName{
+  font-weight: 400;
+  color: var(--Coolgray);
+}
+
+.step4 h3{
+  font-size: .8rem;
+  color: var(--Coolgray);
+  font-weight: 200;
+}
+
+.totalPriceDiv{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 20px;
+}
+
+.totalPriceDiv .totalPrice{
+  color: var(--Purplishblue);
+  font-family: 'ubuntu-Bold';
+  font-size: large;
 }
 
 
