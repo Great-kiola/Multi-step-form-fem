@@ -317,7 +317,23 @@ ul{
   outline: 1.5px solid var(--Purplishblue);
 }
 
+.addOns .addOnPrice{
+  font-size: .7rem;
+  color: var(--Purplishblue);
+}
 
+.addOns ul li{
+  color: var(--Marineblue);
+}
+
+.addLabel{
+  display: flex;
+  align-items: center;
+}
+
+.plansDiv{
+  margin-left: 15px;
+}
 /* Miscellaneous */
 :root {
     --Marineblue: hsl(213, 96%, 18%);
