@@ -63,11 +63,10 @@ h1 {
 }
 
 .Step1{
-  display: none;
   min-height: 500px;
-  /* display: flex;
+  display: flex;
   justify-content: space-around;
-  flex-direction: column; */
+  flex-direction: column;
 }
 
 label{
@@ -297,6 +296,14 @@ ul{
   display: none;
 }
 
+.step4{
+  display: none;
+}
+
+.step5{
+  display: none;
+}
+
 .addOnsCont{
   margin: 25px auto;
 }
@@ -402,6 +409,32 @@ hr{
   color: var(--Purplishblue);
   font-family: 'ubuntu-Bold';
   font-size: large;
+}
+
+
+.thankYouDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.thankYouDiv P{
+  margin: 9px;
+  text-align: center;
+  color: var(--Coolgray);
+  font-size: .8rem;
+  width: 350px;
+}
+
+.thankYouDiv img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.thankYouDiv h1 {
+  color: var(--Marineblue);
+  font-size: 1.5rem;
 }
 
 
