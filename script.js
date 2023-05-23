@@ -23,13 +23,6 @@ prevBtn.addEventListener('click', () => {
 toggle.addEventListener('click', (e) => {
     e.preventDefault();
     toggle.classList.toggle('after');
-    
-    if (yearly.style.fontWeight = '400'){
-        yearly.style.fontWeight = '700';
-        yearly.style.color = 'red';
-    } else {
-        yearly.style.fontWeight = '400';
-    }
 });
 
 

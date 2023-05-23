@@ -247,19 +247,29 @@ ul{
 }
 
 .planBox{
-  border: 1.5px solid var(--Coolgray);
+  border: 1.5px solid var(--Lightgray);
   width: 100px;
-  height: 150px;
+  height: 120px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   padding: 15px;
-  margin: 20px auto;
-  border-radius: 10px;
+  margin: 30px auto 10px;
+  border-radius: 8px;
+}
+ 
+.planName{
+  font-size: .8rem;
+  font-weight: bolder;
+}
+
+.planPrice{
+  font-size: .7rem;
+  color: var(--Coolgray) !important;
 }
 
 .planBox:hover{
-  background-color: var(--Lightblue);
+  background-color: var(--Magnolia);
   outline: 1px solid var(--Purplishblue);
 
 }
