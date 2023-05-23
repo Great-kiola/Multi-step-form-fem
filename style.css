@@ -293,6 +293,10 @@ ul{
   display: none;
 }
 
+.step3{
+  display: none;
+}
+
 .pageBtns{
   margin: 50px auto;
 }
