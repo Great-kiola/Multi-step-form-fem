@@ -11,6 +11,7 @@ let step2 = document.querySelector('.step2');
 
 let planBox = document.querySelector('.planBox');
 
+
 let errorDiv1 = document.querySelector('.errorMsg1');
 let errorDiv2 = document.querySelector('.errorMsg2');
 let errorDiv3 = document.querySelector('.errorMsg3');
@@ -21,21 +22,29 @@ let nameInput = document.querySelector('#name');
 let phoneInput = document.querySelector('#phoneNumber');
 
 
+
 nextBtn.addEventListener('click', () => {
 
     function submit(){
         let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     
-        if(eAddressInput.value.match(validRegex)){
+        if(eAddressInput.value.match(validRegex) && !nameInput.value && !phoneInput.value) {
+            errorDiv1.style.display = 'none';
             errorDiv2.style.display = 'none';
+            errorDiv3.style.display = 'none';
+
             step1.style.display = 'none';
             step2.style.display = 'block';
             return true;
         }else {
+            errorDiv1.style.display = 'block';
             errorDiv2.style.display = 'block';
+            errorDiv3.style.display = 'block';
         }
 
-        if (!){}
+        // if (!nameInput.value){
+        //     errorDiv1.style.display = 'none';
+        // }
 
 
 
