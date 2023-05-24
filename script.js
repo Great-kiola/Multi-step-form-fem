@@ -17,9 +17,9 @@ let errorDiv2 = document.querySelector('.errorMsg2');
 let errorDiv3 = document.querySelector('.errorMsg3');
 
 
-let eAddressInput = document.querySelector('#email');
-let nameInput = document.querySelector('#name');
-let phoneInput = document.querySelector('#phoneNumber');
+let eAddressInput = document.getElementById('email');
+let nameInput = document.getElementById('name');
+let phoneInput = document.getElementById('phoneNumber');
 
 
 
@@ -28,7 +28,7 @@ nextBtn.addEventListener('click', () => {
     function submit(){
         let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     
-        if(eAddressInput.value.match(validRegex) && !nameInput.value && !phoneInput.value) {
+        if(eAddressInput.value.match(validRegex) && nameInput.value && phoneInput.value) {
             errorDiv1.style.display = 'none';
             errorDiv2.style.display = 'none';
             errorDiv3.style.display = 'none';
