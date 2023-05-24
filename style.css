@@ -433,7 +433,7 @@ hr{
 
 .totalPriceDiv .totalPrice{
   color: var(--Purplishblue);
-  font-family: 'ubuntu-Bold';
+  font-family: 'ubuntu-Bold', sans-serif;
   font-size: large;
 }
 

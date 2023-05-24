@@ -42,9 +42,6 @@ nextBtn.addEventListener('click', () => {
             errorDiv3.style.display = 'block';
         }
 
-        // if (!nameInput.value){
-        //     errorDiv1.style.display = 'none';
-        // }
 
 
 
@@ -70,6 +67,10 @@ planBox.addEventListener('click', () => {
     planBox.classList.add('active');
 });
 
+
+// if (!nameInput.value){
+//     errorDiv1.style.display = 'none';
+// }
 
 
 
