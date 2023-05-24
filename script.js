@@ -8,6 +8,10 @@ let monthly = document.querySelector('.monthly');
 
 let step1 = document.querySelector('.Step1');
 let step2 = document.querySelector('.step2');
+let step3 = document.querySelector('.step3');
+let step4 = document.querySelector('.step4');
+let step5 = document.querySelector('.step5');
+
 
 let planBox = document.querySelector('.planBox');
 
@@ -20,6 +24,12 @@ let errorDiv3 = document.querySelector('.errorMsg3');
 let eAddressInput = document.getElementById('email');
 let nameInput = document.getElementById('name');
 let phoneInput = document.getElementById('phoneNumber');
+
+
+let nextBtn2 = document.getElementById('nextBtn2');
+let prevBtn3 = document.getElementById('prevBtn3');
+
+let nextBtn3 = document.getElementById('nextBtn3');
 
 
 
@@ -37,10 +47,6 @@ nextBtn.addEventListener('click', () => {
 
             errorDiv2.style.display = 'block';
         }
-
-
-
-
     }
 
     submit();
@@ -68,6 +74,23 @@ planBox.addEventListener('click', () => {
     alert('clicked!')
     planBox.classList.add('active');
 });
+
+nextBtn2.addEventListener('click', () => {
+    step2.style.display = 'none';
+    step3.style.display = 'block';
+});
+
+prevBtn3.addEventListener('click', () => {
+    step2.style.display = 'block';
+    step3.style.display = 'none';
+});
+
+nextBtn3.addEventListener('click', () => {
+    step4.style.display = 'none';
+    step5.style.display = 'block';
+});
+
+
 
 
 // if (!nameInput.value){
