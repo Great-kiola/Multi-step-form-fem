@@ -86,8 +86,8 @@ prevBtn3.addEventListener('click', () => {
 });
 
 nextBtn3.addEventListener('click', () => {
-    step4.style.display = 'none';
-    step5.style.display = 'block';
+    step4.style.display = 'block';
+    step3.style.display = 'none';
 });
 
 
