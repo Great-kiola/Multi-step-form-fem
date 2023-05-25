@@ -30,6 +30,7 @@ let nextBtn2 = document.getElementById('nextBtn2');
 let prevBtn3 = document.getElementById('prevBtn3');
 
 let nextBtn3 = document.getElementById('nextBtn3');
+let prevBtn4 = document.getElementById('prevBtn4');
 
 
 
@@ -88,6 +89,11 @@ prevBtn3.addEventListener('click', () => {
 nextBtn3.addEventListener('click', () => {
     step4.style.display = 'block';
     step3.style.display = 'none';
+});
+
+prevBtn4.addEventListener('click', () => {
+    step4.style.display = 'none';
+    step3.style.display = 'flex';
 });
 
 
