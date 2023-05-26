@@ -32,6 +32,9 @@ let prevBtn3 = document.getElementById('prevBtn3');
 let nextBtn3 = document.getElementById('nextBtn3');
 let prevBtn4 = document.getElementById('prevBtn4');
 
+let nextBtn4 = document.getElementById('nextBtn4');
+let PrevBtn4 = document.getElementById('prevBtn4');
+
 
 
 nextBtn.addEventListener('click', () => {
@@ -96,6 +99,10 @@ prevBtn4.addEventListener('click', () => {
     step3.style.display = 'block';
 });
 
+nextBtn4.addEventListener('click', () => {
+    step5.style.display = 'block';
+    step4.style.display = 'none';
+});
 
 
 
