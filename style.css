@@ -56,7 +56,6 @@ h1 {
 }
 
 .secondSection{
-  /* height: 380px; */
   width: 100%;
   margin: 10px 40px;
 }
@@ -177,8 +176,8 @@ ul{
 }
 
 .numbers.active {
-    background-color: var(--Lightblue);
-    color: var(--Marineblue);
+  background-color: var(--Lightblue);
+  color: var(--Marineblue);
 }
 
 .progress1{
@@ -330,11 +329,6 @@ ul{
 
 .step5{
   display: none;
-  /* display: flex; */
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-
 }
 
 .addOnsCont{
