@@ -319,6 +319,8 @@ ul{
 }
 
 .step3{
+  display: flex;
+  flex-direction: column;
   display: none;
 }
 

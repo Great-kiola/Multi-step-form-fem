@@ -93,7 +93,7 @@ nextBtn3.addEventListener('click', () => {
 
 prevBtn4.addEventListener('click', () => {
     step4.style.display = 'none';
-    step3.style.display = 'flex';
+    step3.style.display = 'block';
 });
 
 
