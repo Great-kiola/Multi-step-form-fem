@@ -56,6 +56,7 @@ h1 {
 }
 
 .secondSection{
+  max-height: 400px;
   width: 100%;
   margin: 10px 40px;
 }
@@ -318,9 +319,10 @@ ul{
 }
 
 .step3{
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   display: none;
+  /* max-height: 350px; */
 }
 
 .step4{
@@ -332,7 +334,7 @@ ul{
 }
 
 .addOnsCont{
-  margin: 25px auto;
+  margin: 40px auto 65px;
 }
 
 .addOns{
