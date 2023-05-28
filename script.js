@@ -62,10 +62,10 @@ function handleSubmit(e) {
         errorDiv3.style.display = "none";
     }
 
-    numbers.forEach(num => num.classList.remove("active"));
+    // numbers.forEach(num => num.classList.remove("active"));
 
-    // step1.style.display = "none";
-    // step2.style.display = "block";
+    step1.style.display = "none";
+    step2.style.display = "block";
 
 }
 
