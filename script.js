@@ -34,43 +34,43 @@ let PrevBtn4 = document.getElementById("prevBtn4");
 
 
 nextBtn.forEach(next =>  {
-    next.addEventListener("click", handleSubmit);
+    next.addEventListener("click", function handleSubmit(e) {
+        e.preventDefault();
+    
+        // Check if the name is valid.
+        if (!nameInput.value) {
+            errorDiv1.style.display = "block";
+        } else {
+            errorDiv1.style.display = "none";
+        }
+    
+        // Form validation for email addresses
+        let validRegex =
+            /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    
+        if (eAddressInput.value.match(validRegex)) {
+            errorDiv2.style.display = "none";
+        } else {
+            errorDiv2.style.display = "block";
+        }
+    
+        // Checks if phone number is valid
+        if (!phoneInput.value) {
+            errorDiv3.style.display = "block";
+        } else {
+            errorDiv3.style.display = "none";
+        }
+    
+        // numbers.forEach(num => num.classList.remove("active"));
+    
+        step1.style.display = "none";
+        step2.style.display = "block";
+    
+    });
 });
 
 
-function handleSubmit(e) {
-    e.preventDefault();
 
-    // Check if the name is valid.
-    if (!nameInput.value) {
-        errorDiv1.style.display = "block";
-    } else {
-        errorDiv1.style.display = "none";
-    }
-
-    // Form validation for email addresses
-    let validRegex =
-        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-    if (eAddressInput.value.match(validRegex)) {
-        errorDiv2.style.display = "none";
-    } else {
-        errorDiv2.style.display = "block";
-    }
-
-    // Checks if phone number is valid
-    if (!phoneInput.value) {
-        errorDiv3.style.display = "block";
-    } else {
-        errorDiv3.style.display = "none";
-    }
-
-    // numbers.forEach(num => num.classList.remove("active"));
-
-    step1.style.display = "none";
-    step2.style.display = "block";
-
-}
 
 
 prevBtn.addEventListener("click", () => {
@@ -83,35 +83,35 @@ toggle.addEventListener("click", (e) => {
     toggle.classList.toggle("after");
 });
 
-planBox.addEventListener("click", () => {
-    alert("clicked!");
-    planBox.classList.add("active");
-});
+// planBox.addEventListener("click", () => {
+//     alert("clicked!");
+//     planBox.classList.add("active");
+// });
 
-nextBtn2.addEventListener("click", () => {
-    step2.style.display = "none";
-    step3.style.display = "block";
-});
+// nextBtn2.addEventListener("click", () => {
+//     step2.style.display = "none";
+//     step3.style.display = "block";
+// });
 
-prevBtn3.addEventListener("click", () => {
-    step2.style.display = "block";
-    step3.style.display = "none";
-});
+// prevBtn3.addEventListener("click", () => {
+//     step2.style.display = "block";
+//     step3.style.display = "none";
+// });
 
-nextBtn3.addEventListener("click", () => {
-    step4.style.display = "block";
-    step3.style.display = "none";
-});
+// nextBtn3.addEventListener("click", () => {
+//     step4.style.display = "block";
+//     step3.style.display = "none";
+// });
 
-prevBtn4.addEventListener("click", () => {
-    step4.style.display = "none";
-    step3.style.display = "block";
-});
+// prevBtn4.addEventListener("click", () => {
+//     step4.style.display = "none";
+//     step3.style.display = "block";
+// });
 
-nextBtn4.addEventListener("click", () => {
-    step5.style.display = "block";
-    step4.style.display = "none";
-});
+// nextBtn4.addEventListener("click", () => {
+//     step5.style.display = "block";
+//     step4.style.display = "none";
+// });
 
 // if (!nameInput.value){
 //     errorDiv1.style.display = 'none';
