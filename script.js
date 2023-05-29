@@ -33,7 +33,10 @@ let PrevBtn4 = document.getElementById("prevBtn4");
 
 
 
-nextBtn.addEventListener("click", handleSubmit);
+nextBtn.forEach(next =>  {
+    next.addEventListener("click", handleSubmit);
+});
+
 
 function handleSubmit(e) {
     e.preventDefault();
@@ -68,6 +71,7 @@ function handleSubmit(e) {
     step2.style.display = "block";
 
 }
+
 
 prevBtn.addEventListener("click", () => {
     step1.style.display = "flex";
