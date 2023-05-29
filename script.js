@@ -119,7 +119,7 @@ nextBtn4.addEventListener("click", () => {
 // errorDiv1.style.display = 'none';
 // errorDiv2.style.display = 'none';
 
-// forEach( (item) => {item.classList.add('active');}
+forEach( (item) => {item.classList.add('active');});
 
 
 // Handles what happens when you click the first submit button
