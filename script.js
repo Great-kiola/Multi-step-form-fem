@@ -33,8 +33,7 @@ let PrevBtn4 = document.getElementById("prevBtn4");
 
 
 
-nextBtn.forEach(next =>  {
-    next.addEventListener("click", function handleSubmit(e) {
+    nextBtn.addEventListener("click", function handleSubmit(e) {
         e.preventDefault();
     
         // Check if the name is valid.
@@ -67,7 +66,6 @@ nextBtn.forEach(next =>  {
         step2.style.display = "block";
     
     });
-});
 
 
 
@@ -82,6 +80,19 @@ toggle.addEventListener("click", (e) => {
     e.preventDefault();
     toggle.classList.toggle("after");
 });
+
+// planBox.forEach(allPlans => {
+    
+//     allPlans.addEventListener("click", () => {
+//         allPlans.classList.add('active');
+//     });
+// });
+
+for (let allPlans of planBox) {
+    allPlans.addEventListener("click", () => {
+        allPlans.classList.add('active');
+    });
+}
 
 // planBox.addEventListener("click", () => {
 //     alert("clicked!");
