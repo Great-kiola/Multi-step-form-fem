@@ -31,6 +31,112 @@ let prevBtn4 = document.getElementById("prevBtn4");
 let nextBtn4 = document.getElementById("nextBtn4");
 let PrevBtn4 = document.getElementById("prevBtn4");
 
+
+
+    nextBtn.addEventListener("click", function handleSubmit(e) {
+        e.preventDefault();
+    
+        // Check if the name is valid.
+        if (!nameInput.value) {
+            errorDiv1.style.display = "block";
+        } else {
+            errorDiv1.style.display = "none";
+        }
+    
+        // Form validation for email addresses
+        let validRegex =
+            /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    
+        if (eAddressInput.value.match(validRegex)) {
+            errorDiv2.style.display = "none";
+        } else {
+            errorDiv2.style.display = "block";
+        }
+    
+        // Checks if phone number is valid
+        if (!phoneInput.value) {
+            errorDiv3.style.display = "block";
+        } else {
+            errorDiv3.style.display = "none";
+        }
+    
+        // numbers.forEach(num => num.classList.remove("active"));
+    
+        step1.style.display = "none";
+        step2.style.display = "block";
+    
+    });
+
+
+
+
+
+prevBtn.addEventListener("click", () => {
+    step1.style.display = "flex";
+    step2.style.display = "none";
+});
+
+toggle.addEventListener("click", (e) => {
+    e.preventDefault();
+    toggle.classList.toggle("after");
+});
+
+// planBox.forEach(allPlans => {
+    
+//     allPlans.addEventListener("click", () => {
+//         allPlans.classList.add('active');
+//     });
+// });
+
+for (let allPlans of planBox) {
+    allPlans.addEventListener("click", () => {
+        allPlans.classList.add('active');
+    });
+}
+
+// planBox.addEventListener("click", () => {
+//     alert("clicked!");
+//     planBox.classList.add("active");
+// });
+
+// nextBtn2.addEventListener("click", () => {
+//     step2.style.display = "none";
+//     step3.style.display = "block";
+// });
+
+// prevBtn3.addEventListener("click", () => {
+//     step2.style.display = "block";
+//     step3.style.display = "none";
+// });
+
+// nextBtn3.addEventListener("click", () => {
+//     step4.style.display = "block";
+//     step3.style.display = "none";
+// });
+
+// prevBtn4.addEventListener("click", () => {
+//     step4.style.display = "none";
+//     step3.style.display = "block";
+// });
+
+// nextBtn4.addEventListener("click", () => {
+//     step5.style.display = "block";
+//     step4.style.display = "none";
+// });
+
+// if (!nameInput.value){
+//     errorDiv1.style.display = 'none';
+// }
+
+// errorDiv1.style.display = 'block';
+// errorDiv2.style.display = 'block';
+
+// errorDiv1.style.display = 'none';
+// errorDiv2.style.display = 'none';
+
+// forEach( (item) => {item.classList.add('active');});
+
+
 // Handles what happens when you click the first submit button
 // nextBtn.addEventListener("click", () => {
 //     function submit() {
@@ -64,6 +170,7 @@ let PrevBtn4 = document.getElementById("prevBtn4");
 //     step2.style.display = "block";
 
 //     submit();
+<<<<<<< HEAD
 // });
 
 nextBtn.addEventListener("click", handleSubmit);
@@ -153,3 +260,6 @@ nextBtn4.addEventListener("click", () => {
 // errorDiv2.style.display = 'none';
 
 // forEach( (item) => {item.classList.add('active');}
+=======
+// });
+>>>>>>> 82cedc5ad2693587afe71b597de3868fa9e6e240
