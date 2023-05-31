@@ -146,7 +146,7 @@ nextBtn4.addEventListener("click", () => {
 //     errorDiv1.style.display = 'none';
 // }
 
-// errorDiv1.style.display = 'block';
+// errorDiv1.style.di = 'block';
 // errorDiv2.style.display = 'block';
 
 // errorDiv1.style.display = 'none';
