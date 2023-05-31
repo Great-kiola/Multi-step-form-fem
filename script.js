@@ -170,7 +170,7 @@ for (let allPlans of planBox) {
 //     step2.style.display = "block";
 
 //     submit();
-<<<<<<< HEAD
+
 // });
 
 nextBtn.addEventListener("click", handleSubmit);
@@ -260,6 +260,3 @@ nextBtn4.addEventListener("click", () => {
 // errorDiv2.style.display = 'none';
 
 // forEach( (item) => {item.classList.add('active');}
-=======
-// });
->>>>>>> 82cedc5ad2693587afe71b597de3868fa9e6e240
