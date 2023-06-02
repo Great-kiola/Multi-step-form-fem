@@ -120,7 +120,7 @@ for (let allPlans of planBox) {
 // });
 
 // nextBtn4.addEventListener("click", () => {
-//     step5.style.display = "block";
+//     step5.style.disp = "block";
 //     step4.style.display = "none";
 // });
 
