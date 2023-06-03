@@ -33,10 +33,10 @@ let PrevBtn4 = document.getElementById("prevBtn4");
 
 
 
-    nextBtn.addEventListener("click", function handleSubmit(e) {
-        e.preventDefault();
+nextBtn.addEventListener("click", function handleSubmit(e) {
+    e.preventDefault();
     
-        // Check if the name is valid.
+    // Check if the name is valid.
         if (!nameInput.value) {
             errorDiv1.style.display = "block";
         } else {
@@ -120,7 +120,7 @@ for (let allPlans of planBox) {
 // });
 
 // nextBtn4.addEventListener("click", () => {
-//     step5.style.display = "block";
+//     step5.style.disp = "block";
 //     step4.style.display = "none";
 // });
 
@@ -170,4 +170,7 @@ for (let allPlans of planBox) {
 //     step2.style.display = "block";
 
 //     submit();
+
 // });
+
+
