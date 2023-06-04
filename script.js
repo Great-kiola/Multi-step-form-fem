@@ -1,7 +1,7 @@
 let numbers = document.querySelector(".numbers");
-let nextBtn = document.querySelector(".nextBtn");
-let toggle = document.querySelector(".toggle");
-let prevBtn = document.querySelector(".prevBtn");
+
+
+
 
 let yearly = document.querySelector(".yearly");
 let monthly = document.querySelector(".monthly");
@@ -33,10 +33,49 @@ let prevBtn4 = document.getElementById("prevBtn4");
 let nextBtn4 = document.getElementById("nextBtn4");
 let PrevBtn4 = document.getElementById("prevBtn4");
 
+let toggle = document.querySelector(".toggle");
+const circleStep = document.querySelectorAll(".numbers");
+
+let time;
+let currentStep = 1;
+let currentCircle = 0;
+
+const obj = {
+    plan: null,
+    kind: null,
+    price: null,
+}
 
 
 
 
+steps.forEach((step) => {
+    const nextBtn = step.querySelector(".nextBtn");
+    const prevBtn = step.querySelector(".prevBtn");
+
+    if (prevBtn){
+        prevBtn.addEventListener("click", () => {
+            document.querySelector(`.numbers-${currentStep}`).style.display = "none";
+            currentStep--;
+            document.querySelector(`.numbers-${currentStep}`).style.display = "flex";
+            circleStep[currentCircle].classList.remove("active");
+            currentCircle--;
+        });
+    }
+
+    nextBtn.addEventListener("click", () => {
+        document.querySelector(`.numbers-${currentStep}`).style.display = "none";
+        if (currentStep < 5 && validateForm()){
+            currentStep++;
+            currentCircle++;
+            setTotal();
+        }
+
+        document.querySelector(`.numbers-${currentStep}`).style.display = "flex";
+        circleStep[currentCircle].classList.add("active");
+        summary(obj);
+    });
+});
 
 
 
