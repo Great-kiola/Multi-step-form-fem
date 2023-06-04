@@ -6,11 +6,13 @@ let prevBtn = document.querySelector(".prevBtn");
 let yearly = document.querySelector(".yearly");
 let monthly = document.querySelector(".monthly");
 
-let step1 = document.querySelector(".Step1");
-let step2 = document.querySelector(".step2");
-let step3 = document.querySelector(".step3");
-let step4 = document.querySelector(".step4");
-let step5 = document.querySelector(".step5");
+
+const steps = document.querySelectorAll(".stp");
+// let step1 = document.querySelector(".Step1");
+// let step2 = document.querySelector(".step2");
+// let step3 = document.querySelector(".step3");
+// let step4 = document.querySelector(".step4");
+// let step5 = document.querySelector(".step5");
 
 let planBox = document.querySelector(".planBox");
 
@@ -33,53 +35,96 @@ let PrevBtn4 = document.getElementById("prevBtn4");
 
 
 
-nextBtn.addEventListener("click", function handleSubmit(e) {
-    e.preventDefault();
-    
-    // Check if the name is valid.
-        if (!nameInput.value) {
-            errorDiv1.style.display = "block";
-        } else {
-            errorDiv1.style.display = "none";
-        }
-    
-        // Form validation for email addresses
-        let validRegex =
-            /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    
-        if (eAddressInput.value.match(validRegex)) {
-            errorDiv2.style.display = "none";
-        } else {
-            errorDiv2.style.display = "block";
-        }
-    
-        // Checks if phone number is valid
-        if (!phoneInput.value) {
-            errorDiv3.style.display = "block";
-        } else {
-            errorDiv3.style.display = "none";
-        }
-    
-        // numbers.forEach(num => num.classList.remove("active"));
-    
-        step1.style.display = "none";
-        step2.style.display = "block";
-    
-    });
 
 
 
 
 
-prevBtn.addEventListener("click", () => {
-    step1.style.display = "flex";
-    step2.style.display = "none";
-});
 
-toggle.addEventListener("click", (e) => {
-    e.preventDefault();
-    toggle.classList.toggle("after");
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// nextBtn.addEventListener("click", function handleSubmit(e) {
+//     e.preventDefault();
+    
+//     // Check if the name is valid.
+//         if (!nameInput.value) {
+//             errorDiv1.style.display = "block";
+//         } else {
+//             errorDiv1.style.display = "none";
+//         }
+    
+//         // Form validation for email addresses
+//         let validRegex =
+//             /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    
+//         if (eAddressInput.value.match(validRegex)) {
+//             errorDiv2.style.display = "none";
+//         } else {
+//             errorDiv2.style.display = "block";
+//         }
+    
+//         // Checks if phone number is valid
+//         if (!phoneInput.value) {
+//             errorDiv3.style.display = "block";
+//         } else {
+//             errorDiv3.style.display = "none";
+//         }
+    
+//         // numbers.forEach(num => num.classList.remove("active"));
+    
+//         step1.style.display = "none";
+//         step2.style.display = "block";
+    
+//     });
+
+
+
+
+
+// prevBtn.addEventListener("click", () => {
+//     step1.style.display = "flex";
+//     step2.style.display = "none";
+// });
+
+// toggle.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     toggle.classList.toggle("after");
+// });
 
 // planBox.forEach(allPlans => {
     
@@ -88,11 +133,11 @@ toggle.addEventListener("click", (e) => {
 //     });
 // });
 
-for (let allPlans of planBox) {
-    allPlans.addEventListener("click", () => {
-        allPlans.classList.add('active');
-    });
-}
+// for (let allPlans of planBox) {
+//     allPlans.addEventListener("click", () => {
+//         allPlans.classList.add('active');
+//     });
+// }
 
 // planBox.addEventListener("click", () => {
 //     alert("clicked!");
