@@ -66,9 +66,9 @@ h1 {
 }
 
 .Step1{
-  /* display: none; */
+  display: none;
   min-height: 420px;
-  display: flex;
+  /* display: flex; */
   justify-content: space-evenly;
   flex-direction: column;
 } 
@@ -303,7 +303,7 @@ ul{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 50px auto;
+  margin: 50px 0px;
 }
 
 .prevBtn{
@@ -312,6 +312,7 @@ ul{
   font-weight: 700;
   color: var(--Marineblue);
   cursor: pointer;
+
 }
 
 .step2{
@@ -319,9 +320,9 @@ ul{
 }
 
 .step3{
-  /* display: flex;
-  flex-direction: column; */
-  display: none;
+  display: flex;
+  flex-direction: column;
+  /* display: none; */
   /* max-height: 350px; */
 }
 
@@ -333,9 +334,6 @@ ul{
   display: none;
 }
 
-.addOnsCont{
-  margin: 40px auto 65px;
-}
 
 .addOns{
   display: flex;

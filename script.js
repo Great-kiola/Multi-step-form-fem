@@ -77,6 +77,37 @@ steps.forEach((step) => {
     });
 });
 
+function summary(obj) {
+    
+}
+
+function validateForm() {
+    // let valid = true;
+
+    // Check if the name is valid.
+    if (!nameInput.value) {
+        errorDiv1.style.display = "block";
+    } else {
+        errorDiv1.style.display = "none";
+    }
+    
+    // Form validation for email addresses
+    let validRegex =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    
+    if (eAddressInput.value.match(validRegex)) {
+        errorDiv2.style.display = "none";
+    } else {
+        errorDiv2.style.display = "block";
+    }
+    
+    // Checks if phone number is valid
+    if (!phoneInput.value) {
+        errorDiv3.style.display = "block";
+    } else {
+        errorDiv3.style.display = "none";
+    }
+}
 
 
 
