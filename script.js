@@ -65,10 +65,11 @@ steps.forEach((step) => {
 
     nextBtn.addEventListener("click", () => {
         document.querySelector(`.numbers-${currentStep}`).style.display = "none";
+
         if (currentStep < 5 && validateForm()){
             currentStep++;
             currentCircle++;
-            setTotal();
+            // setTotal();
         }
 
         document.querySelector(`.numbers-${currentStep}`).style.display = "flex";
@@ -78,7 +79,15 @@ steps.forEach((step) => {
 });
 
 function summary(obj) {
+    const planName = document.querySelector(".chosenPlans");
+    const planPrice = document.querySelector(".chosenPrice");
     
+    planPrice.innerHTML = `${obj.price.innerText}`;
+    planName.innerHTML = `${obj.plan.innerText} (${
+        obj.kind ? "yearly" : "monthly"
+    })`;
+
+
 }
 
 function validateForm() {

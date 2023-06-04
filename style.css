@@ -66,9 +66,9 @@ h1 {
 }
 
 .Step1{
-  display: none;
+  /* display: none; */
   min-height: 420px;
-  /* display: flex; */
+  display: flex;
   justify-content: space-evenly;
   flex-direction: column;
 } 
@@ -320,9 +320,9 @@ ul{
 }
 
 .step3{
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-  /* display: none; */
+  display: none;
   /* max-height: 350px; */
 }
 
