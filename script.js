@@ -14,7 +14,7 @@ const steps = document.querySelectorAll(".stp");
 // let step4 = document.querySelector(".step4");
 // let step5 = document.querySelector(".step5");
 
-let planBox = document.querySelector(".planBox");
+let planBox = document.querySelectorAll(".planBox");
 
 let errorDiv1 = document.querySelector(".errorMsg1");
 let errorDiv2 = document.querySelector(".errorMsg2");
@@ -36,6 +36,7 @@ let PrevBtn4 = document.getElementById("prevBtn4");
 let toggle = document.querySelector(".toggle");
 const circleStep = document.querySelectorAll(".numbers");
 
+
 let time;
 let currentStep = 1;
 let currentCircle = 0;
@@ -46,82 +47,95 @@ const obj = {
     price: null,
 }
 
+//Toggle
 
-
-
-steps.forEach((step) => {
-    const nextBtn = step.querySelector(".nextBtn");
-    const prevBtn = step.querySelector(".prevBtn");
-
-    if (prevBtn){
-        prevBtn.addEventListener("click", () => {
-            document.querySelector(`.numbers-${currentStep}`).style.display = "none";
-            currentStep--;
-            document.querySelector(`.numbers-${currentStep}`).style.display = "flex";
-            circleStep[currentCircle].classList.remove("active");
-            currentCircle--;
-        });
-    }
-
-    nextBtn.addEventListener("click", () => {
-        document.querySelector(`.numbers-${currentStep}`).style.display = "none";
-
-        if (currentStep < 5 && validateForm()){
-            currentStep++;
-            currentCircle++;
-            // setTotal();
-        }
-
-        document.querySelector(`.numbers-${currentStep}`).style.display = "flex";
-        circleStep[currentCircle].classList.add("active");
-        summary(obj);
-    });
+toggle.addEventListener("click", (e) => {
+    e.preventDefault();
+    toggle.classList.toggle("after");
 });
 
-function summary(obj) {
-    const planName = document.querySelector(".chosenPlans");
-    const planPrice = document.querySelector(".chosenPrice");
+
+
+
+// steps.forEach((step) => {
+//     const nextBtn = step.querySelector(".nextBtn");
+//     const prevBtn = step.querySelector(".prevBtn");
+
+//     if (prevBtn){
+//         prevBtn.addEventListener("click", () => {
+//             document.querySelector(`.numbers-${currentStep}`).style.display = "none";
+//             currentStep--;
+//             document.querySelector(`.numbers-${currentStep}`).style.display = "flex";
+//             circleStep[currentCircle].classList.remove("active");
+//             currentCircle--;
+//         });
+//     }
+
+//     nextBtn.addEventListener("click", () => {
+//         document.querySelector(`.numbers-${currentStep}`).style.display = "none";
+
+//         if (currentStep < 5 && validateForm()){
+//             currentStep++;
+//             currentCircle++;
+//             // setTotal();
+//         }
+
+//         document.querySelector(`.numbers-${currentStep}`).style.display = "flex";
+//         circleStep[currentCircle].classList.add("active");
+//         summary(obj);
+//     });
+// });
+
+// function summary(obj) {
+//     const planName = document.querySelector(".chosenPlans");
+//     const planPrice = document.querySelector(".chosenPrice");
     
-    planPrice.innerHTML = `${obj.price.innerText}`;
-    planName.innerHTML = `${obj.plan.innerText} (${
-        obj.kind ? "yearly" : "monthly"
-    })`;
+//     planPrice.innerHTML = `${obj.price.innerText}`;
+//     planName.innerHTML = `${obj.plan.innerText} (${
+//         obj.kind ? "yearly" : "monthly"
+//     })`;
 
 
-}
+// }
 
-function validateForm() {
-    // let valid = true;
+// function validateForm() {
+//     // let valid = true;
 
-    // Check if the name is valid.
-    if (!nameInput.value) {
-        errorDiv1.style.display = "block";
-    } else {
-        errorDiv1.style.display = "none";
-    }
+//     // Check if the name is valid.
+//     if (!nameInput.value) {
+//         errorDiv1.style.display = "block";
+//     } else {
+//         errorDiv1.style.display = "none";
+//     }
     
-    // Form validation for email addresses
-    let validRegex =
-    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+//     // Form validation for email addresses
+//     let validRegex =
+//     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     
-    if (eAddressInput.value.match(validRegex)) {
-        errorDiv2.style.display = "none";
-    } else {
-        errorDiv2.style.display = "block";
-    }
+//     if (eAddressInput.value.match(validRegex)) {
+//         errorDiv2.style.display = "none";
+//     } else {
+//         errorDiv2.style.display = "block";
+//     }
     
-    // Checks if phone number is valid
-    if (!phoneInput.value) {
-        errorDiv3.style.display = "block";
-    } else {
-        errorDiv3.style.display = "none";
-    }
-}
+//     // Checks if phone number is valid
+//     if (!phoneInput.value) {
+//         errorDiv3.style.display = "block";
+//     } else {
+//         errorDiv3.style.display = "none";
+//     }
+// }
 
 
+planBox.forEach((allPlans) => {
+
+    allPlans.addEventListener("click", (e) => {
+        e.preventDefault();
 
 
-
+        allPlans.classList.toggle('active');
+    })
+});
 
 
 
