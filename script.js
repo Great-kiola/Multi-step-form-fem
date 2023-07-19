@@ -36,6 +36,8 @@ let PrevBtn4 = document.getElementById("prevBtn4");
 let toggle = document.querySelector(".toggle");
 const circleStep = document.querySelectorAll(".numbers");
 
+let nextBtn = document.gquerySelectorAll(".nextBtn");
+
 
 let time;
 let currentStep = 1;
@@ -53,6 +55,7 @@ toggle.addEventListener("click", (e) => {
     e.preventDefault();
     toggle.classList.toggle("after");
 });
+
 
 
 
@@ -134,9 +137,21 @@ planBox.forEach((allPlans) => {
 
 
         allPlans.classList.toggle('active');
+
+        // if (allPlans.classList.toggle('active')){
+        //     allPlans.classList.remove('active');
+        // } else {
+        //     allPlans.classList.add('active');
+        // }
     })
 });
 
+
+nextBtn.forEach((nextPart) => {
+    nextPart.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+});
 
 
 

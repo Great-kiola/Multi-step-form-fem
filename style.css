@@ -65,13 +65,7 @@ h1 {
   border: var(--Purplishblue);
 }
 
-.Step1{
-  display: none;
-  min-height: 420px;
-  /* display: flex; */
-  justify-content: space-evenly;
-  flex-direction: column;
-} 
+
 
 .errorMsg{
   display: none;
@@ -315,8 +309,18 @@ ul{
 
 }
 
-.step2{
+.Step1{
   /* display: none; */
+  min-height: 420px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+} 
+
+.step2{
+  display: none;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .step3{
