@@ -69,9 +69,48 @@ planBox.forEach(allPlans => {
 });
 
 
-nextBtn.forEach((nextPart) => {
-    nextPart.addEventListener('click', function(e) {
-        e.preventDefault();
+nextBtn.forEach( nextPart => {
+    nextPart.addEventListener('click', () => {
+        document.querySelector(`.numbers-${currentStep}`).style.display = "none";
+
+        if (currentStep < 5 && validateForm()){
+            currentStep++;
+            currentCircle++;
+            // setTotal();
+        }
+
+        document.querySelector(`.numbers-${currentStep}`).style.display = "flex";
+        circleStep[currentCircle].classList.add("active");
+        summary(obj);
     });
 });
 
+
+// steps.forEach((step) => {
+//     const nextBtn = step.querySelector(".nextBtn");
+//     const prevBtn = step.querySelector(".prevBtn");
+
+//     if (prevBtn){
+//         prevBtn.addEventListener("click", () => {
+//             document.querySelector(`.numbers-${currentStep}`).style.display = "none";
+//             currentStep--;
+//             document.querySelector(`.numbers-${currentStep}`).style.display = "flex";
+//             circleStep[currentCircle].classList.remove("active");
+//             currentCircle--;
+//         });
+//     }
+
+//     nextBtn.addEventListener("click", () => {
+//         document.querySelector(`.numbers-${currentStep}`).style.display = "none";
+
+//         if (currentStep < 5 && validateForm()){
+//             currentStep++;
+//             currentCircle++;
+//             // setTotal();
+//         }
+
+//         document.querySelector(`.numbers-${currentStep}`).style.display = "flex";
+//         circleStep[currentCircle].classList.add("active");
+//         summary(obj);
+//     });
+// });
