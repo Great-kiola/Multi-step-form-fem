@@ -50,15 +50,14 @@ const obj = {
 }
 
 //Toggle
-
 toggle.addEventListener("click", (e) => {
     e.preventDefault();
     toggle.classList.toggle("after");
 });
 
 
-// PlanBox
 
+// PlanBox
 planBox.forEach(allPlans => {
     allPlans.addEventListener('click', () => {
         planBox.forEach(allPlans => {
