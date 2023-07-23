@@ -73,7 +73,6 @@ planBox.forEach(allPlans => {
 
 // Next Button
 nextBtn.forEach(nextPart => {
-    nextPart.addEventListener('click', () => {
         // alert('Clicked!');
 
         let numbers = document.querySelectorAll(".numbers");
@@ -90,6 +89,5 @@ nextBtn.forEach(nextPart => {
 
         });
 
-    });
 });
 
